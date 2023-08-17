@@ -1,0 +1,19 @@
+/* This is an example of the correct order */
+
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&family=Marcellus+SC&display=swap');
+/* Base styles */
+@tailwind base;
+
+/* Component styles */
+@tailwind components;
+
+/* Utility styles */
+@tailwind utilities;
+
+/* Apply custom styles */
+body {
+  font-family: 'Manrope', sans-serif;
+}
+
+/* ... rest of your CSS rules ... */

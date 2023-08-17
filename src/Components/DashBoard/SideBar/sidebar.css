@@ -1,0 +1,106 @@
+/* Sidebar */
+.sidebar {
+    background: var(--gradient, linear-gradient(140deg, #839C11 0%, #A0BA28 100%));
+    color: white;
+    /* Set the desired width */
+    width: 100%;
+    font-size: 18px;
+    height: 100vh;
+    /* Make the sidebar fixed */
+    top: 0;
+    /* Position it at the top */
+    left: 0;
+    bottom: 0;
+    right: 0;
+    /* Position it at the left */
+}
+
+.top_section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 36px 31px;
+}
+
+.logo {
+    font-size: 16px;
+    line-height: 0;
+}
+
+.bars {
+    width: 20px;
+}
+
+.hide {
+    display: none;
+}
+
+
+.routes {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center center;
+    gap: 10px;
+}
+
+.link {
+    display: flex;
+    color: white;
+    gap: 10px;
+    padding: 10px 10px;
+    text-decoration: none;
+    border-right: 4px solid transparent;
+    transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    align-items: center;
+}
+
+.link:hover {
+    border-right: 4px solid white;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.5);
+    transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.active {
+    border-right: 2px solid white;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.link_text {
+    white-space: nowrap;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-right: 4px solid transparent;
+    transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    justify-content: space-between;
+}
+
+.menu_item {
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+
+}
+
+.menu_container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.menu_container .link {
+
+    padding-left: 20px;
+    border-bottom: #fff 0.5px solid;
+}
+
+/* hover */

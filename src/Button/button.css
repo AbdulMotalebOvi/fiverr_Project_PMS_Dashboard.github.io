@@ -1,0 +1,51 @@
+:root {
+    --tran: all 0.3s linear;
+}
+
+.btn1 {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 12px;
+    height: 50px;
+    padding: 0px 24px;
+    font-weight: 600;
+    color: white;
+    background-color: #839C11;
+    border-radius: 5px;
+    width: auto;
+    max-width: 100%;
+    border: 2px solid #839C11;
+    position: relative;
+    z-index: 1;
+    transition: var(--tran);
+    overflow: hidden;
+    box-shadow: 0px 0px 0px 0px rgba(25, 34, 42, 0.05), 0px 1px 3px 0px rgba(25, 34, 42, 0.05), 0px 5px 5px 0px rgba(25, 34, 42, 0.04), 0px 11px 7px 0px rgba(25, 34, 42, 0.03), 0px 20px 8px 0px rgba(25, 34, 42, 0.01), 0px 32px 9px 0px rgba(25, 34, 42, 0.00);
+
+
+}
+
+
+
+.btn1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    border: .1rem solid white;
+    height: 100%;
+    transform: translateY(-100%);
+    transition: var(--tran);
+}
+
+.btn1:hover:before {
+    transform: translateY(0);
+    z-index: -1;
+}
+
+.btn1:hover {
+    color: #839C11;
+    border: .1rem solid #839C11;
+}
